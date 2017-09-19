@@ -10,7 +10,20 @@ package dualinheritance;
  * @author Mitch
  */
 public class Tiger implements Animal, Predator {
+    public static String REQUIRED_MSG = "This is a required field.";
+    private String prey;
 
+    public String getPrey() {
+        return prey;
+    }
+
+    public void setPrey(String prey) {
+        if(prey == null || prey.length() == 0) {
+            throw new IllegalArgumentException(REQUIRED_MSG);
+        }
+        this.prey = prey;
+    }
+    
     @Override
     public void beBorn() {
         Animal.super.beBorn(); //To change body of generated methods, choose Tools | Templates.
@@ -23,16 +36,11 @@ public class Tiger implements Animal, Predator {
 
     @Override
     public void eatPrey() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return  "The Tiger Ate The" + this.getPrey();
     }
 
     @Override
     public void hunt() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void determinePrrey() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
