@@ -11,6 +11,7 @@ package dualinheritance;
  */
 public class Tiger implements Animal, Predator {
     public static String REQUIRED_MSG = "This is a required field.";
+    
     private String prey;
 
     public String getPrey() {
@@ -35,8 +36,8 @@ public class Tiger implements Animal, Predator {
     }
 
     @Override
-    public void eatPrey() {
-        return  "The Tiger Ate The" + this.getPrey();
+    public String eatPrey() {
+        return  "The Tiger Ate The" + this.prey;
     }
 
     @Override

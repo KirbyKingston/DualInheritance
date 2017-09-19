@@ -11,7 +11,7 @@ package dualinheritance;
  */
 public interface Predator {
     
-    abstract void eatPrey();
+    abstract String eatPrey();
     
     abstract void hunt();
     

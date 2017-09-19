@@ -9,13 +9,14 @@ package dualinheritance;
  *
  * @author Mitch
  */
-public class DualInheritance {
+public class Startup {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Tiger beta = new Tiger();
+        beta.setPrey("rabbit");
     }
     
 }
