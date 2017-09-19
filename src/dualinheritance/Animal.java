@@ -12,6 +12,7 @@ package dualinheritance;
 public interface Animal {
     
     default void beBorn(){
+        //This can't be the correct way of providing output from the methods but the only examples I can find show sout in the body.. Ask Jim in class. 
         System.out.println("the animal has been born");
     }
     

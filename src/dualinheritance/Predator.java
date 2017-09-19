@@ -13,4 +13,8 @@ public interface Predator {
     
     abstract void eatPrey();
     
+    abstract void hunt();
+    
+    abstract void determinePrrey();
+    
 }
